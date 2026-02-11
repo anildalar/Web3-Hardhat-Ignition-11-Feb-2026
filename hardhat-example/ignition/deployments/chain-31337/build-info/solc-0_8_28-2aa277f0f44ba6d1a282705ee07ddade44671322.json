@@ -1,0 +1,39 @@
+{
+  "_format": "hh3-sol-build-info-1",
+  "id": "solc-0_8_28-2aa277f0f44ba6d1a282705ee07ddade44671322",
+  "solcVersion": "0.8.28",
+  "solcLongVersion": "0.8.28+commit.7893614a",
+  "userSourceNameMap": {
+    "contracts/B.sol": "project/contracts/B.sol"
+  },
+  "input": {
+    "language": "Solidity",
+    "settings": {
+      "evmVersion": "cancun",
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "": [
+            "ast"
+          ],
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ]
+        }
+      },
+      "remappings": []
+    },
+    "sources": {
+      "project/contracts/B.sol": {
+        "content": "\n// SPDX-License-Identifier: UNLICENSED\npragma solidity ^0.8.28;\n\n\ncontract B{\n    //. Errors\n    //Enums\n    //Struct\n    //Events\n    //Modifiers\n    \n    //1. Property/ State Variables\n    // type accessModifer variableName\n    string public name; // I am decleraring\n    // I will automatically get a function name()\n\n    //2 Construtor\n    constructor(string memory n){ // n is formal argument\n        name = n;\n    }\n    //3. Methods\n\n    //get the methods\n\n\n\n}"
+      }
+    }
+  }
+}

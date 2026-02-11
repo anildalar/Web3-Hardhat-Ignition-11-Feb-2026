@@ -1,0 +1,4232 @@
+Backend Development
+
+FullStack Development
+1.Frontend Developmet (HTML/CSS/JS/ReactJs)
+2.Backend Development (To Store Information)
+3.DevOps.
+
+Website
+1. Ecommere
+Client Server Architecture
+
+Client ------------>  Server
+chrome(S/W) -------------> Server  + Database(S/W)
+firefox
+opera
+ucbroser
+
+Database  ?
+Database are some software which store information permanently
+
+Types of Database
+1.SQL Database
+ 	Structured Query Language
+ 	Eg
+ 	MySQL/MariaDb,Postgres, SQL Server, MS Access, Oracle, Sybase, Informix,
+
+
+2. NoSQL Database
+ 	MongoDB
+
+
+https://w3school.com
+SQL
+Seequal
+
+npm run dev -- -H 0.0.0.0
+
+
+Anil ------->   Database
+
+Stored
+Manupulate
+
+
+
+Anil -----> Sunil
+
+Structured Query Language
+
+CRUD Operations
+1. C = Create
+2. R = Read
+3. U = Update
+4. D = Delete
+
+
+
+
+We want to learn backend Development/ Backend Eng.
+1. Database
+ 	1.1 SQL Based Database
+ 		1.1.1 MySQL
+ 		1.1.2 Postgress
+ 	1.2 NoSQL Based Database
+ 		1.2.1 MongoDB
+2. Programing Language
+ 	2.1 Javascript -> NodeJs
+ 	2.2 Python
+ 	2.3 Java
+ 	2.4 DotNet
+ 	2.5 PHP
+
+
+You need to install SQL Software on your Laptop/Machine
+
+Database (MySQL + SQL)
+
+1. XAMPP
+ 	https://www.apachefriends.org/
+ 
+2. Open Shell
+3. # mysql -u user -pPassword
+3. # mysql -u root -pValue
+     mysql.exe
+   # cmd   -flag1 flag1value -flag2 -flag2Value
+   # cmd   -arg1  arg1value   -arg2  -arg2Value
+
+
+Where you store your infomation ?
+Database
+
+Database   -> Tables  ->>> Data
+
+
+Anil  ------>  Database
+
+
+Database
+ 	Table
+ 		Data
+
+
+Show all available Databases ?
+SQL Command; ?
+
+show databases;
+
+; -> Semicolon
+: -> colon
+
+
+How to create your own database ?
+CREATE DATABASE databasename;
+create database a_db;
+create database b_db;
+.
+.
+create database z_db;
+
+I want to store some information in database ?
+1. Create database
+ 	1.1  create database e_db;
+2. Go Inside that database
+ 	2.1 use <databaseName>;
+3. Create table
+ 	3.1 Check how many table are there ?
+ 		show tables;
+ 	3.2  create table students_tbl
+4. Describe table structure ?
+ 	4.1 describe <tableName>;
+ 	4.2 desc <tableName>;
+ 	4.3 explain <tableName>;
+
+5. Insert data
+ 	5.1 insert into <tableName>(C) values (V);
+6. Show the inserted data
+
+
+
+Name   Surname	Aadhar	Address City State MobNo
+'Palak'
+Aashtha
+
+
+
+
+
+varchar(255)  -> Anil
+char(255)     -> Anil
+
+
+Todays Assignments
+a_db
+ 	a_tbl
+ 		1 colum
+ 		1 Recods
+b_db
+ 	b_tbl
+ 		2 coloum
+ 		2 Records
+c_db
+ 	c_tbl
+ 		3 coloum
+ 		2 Records
+..
+z_db
+ 	z_tbl
+ 		26 coloumn
+ 		26 Records
+
+oklabs_db
+
+students_tbl
+
+Rolno Name	MobNo  Surname	 Aadhar	 Address	City	State
+1      Palak
+2      Aashtha
+ 
+How to create database ?
+Syntax ?
+
+create database oklabs_db;
+
+
+How to add column to existing table ?
+
+How to add a new Coloum in a table ?
+alert
+Where to add the column ?
+
+
+Syntax ?
+ 	alter table <tableName> add <newColumn> <dataType> after <existingColumn>
+
+Example
+ 	alter table students_tbl add addr varchar(255) after surname;
+
+ 	alter table students_tbl add mobno varchar(255);
+
+ 	alter table students_tbl add rollno varchar(255) first;
+
+
+
+How to check sql records/entries ?
+
+Select
+
+
+
+
+insert into tablename (C) values ('V');
+
+
+insert into tablename (name) values ('ANIL');
+
+
+insert into tablename (name) values ('palak');
+
+
+
+alter table <tableName>  add/modify/drop <columname>
+
+alter table students_table drop mobno;
+
+
+
+name 	-> firstname
+surname -> lastname
+ 
+
+alter table students_table modify oldcolumn newcolumn datatype;
+alter table students_table change oldcolumn newcolumn datatype;
+
+
+
+
+How to change column name temprorary ?
+ 	select
+How to change column name permantly ?
+ 	alter table students_table change oldcolumn newcolumn datatype;
+
+
+Alias
+address   ->     addr
+
+
+Syntax
+ 	select * from <tableName> order by <columnName> asc|desc limit offset,limit;
+
+SQL Queries
+
+1. How you can get the last record of a table?
+ 	select * from employees_tbl order by empId desc limit 1;
+
+google_db
+ 	employees_tbl
+ 		empId	empName	  salary  height
+ 		1.	Anil	10000	   5.6
+ 		2.	Vijay	20000	   5.8
+ 		3.
+
+2. How you can get the second last record of a table?
+3. How much salary is distributed on monthly basis ?
+
+
+function(actualArguemnt);
+sum(salary)
+
+Find the employee with the highest salary.
+Lets take a real world example to learn SQL
+
+
+JustDial.com is a online Directory
+
+System Design
+1. HLD High Level Design
+2. LLD Low Level Design
+ 	2.1 Database Structure Planning
+
+xyzdial.com
+ 	Database + tables + Structure
+
+
+justdial_db
+ 	1. business_categories
+ 		id  bcname
+ 	2. businesses
+ 		id  bname   bc_id
+
+
+SupremeElectronic -> Electronics
+USha Clinic	  -> Hospital
+Gyanodaya College -> Education
+
+
+
+
+
+create table tableName(
+ 	colum1 datatype constraint attributes
+)
+
+
+
+hotels     -> Hotel Bharat Palace
+restaurant -> Hanuman Chat Center
+
+
+
+How you can join table data ?
+1. Inner Join
+
+Syntax
+
+SELECT column_name(s)
+FROM table1
+INNER JOIN table2
+ON table1.column_name = table2.column_name;
+
+select business.bname as 'Business Name',business_categories.bc_name as Category from business inner join business_categories on business.bc_id=business_categories.id;
+
+
+
+Online Business Directory
+
+justdial_db
+ 	1. business_categories
+ 		id  bcname
+ 	2. businesses
+ 		id  bname   bc_id cities_id
+ 	3. cities
+ 		id name
+ 	4. states
+ 		id name cities_id counties_id
+ 	5. countries
+ 		id name
+ 	6. users
+
+
+Supreme Electronics	Neemuch
+Supreme Electronics 	Indore
+Supreme Electronics	Delhi
+ABC Electronics		Mumbai
+
+
+alter table business add cities_id int unsigned;
+
+
+SQL Commands Types
+1. DDL
+ 	drop (remove)
+ 	1.1 drop database
+ 	1.2 drop table
+ 		test_db -> test_tbl
+ 				id name
+ 	1.3 drop table column
+ 		test_db -> test2_tbl
+ 				id name surname
+
+
+
+
+Lets understand Inner Join
+
+Question
+Get all the hospitals of Neemuch ?
+
+1. Cities   	-> Neemuch
+2. Categories	-> hospital
+3. Business	-> Gyanodaya Multispecialty Hospital
+
+
+
+select * from table1 inner join table2 inner join table3 on table1.column=table2.column and table1.column=table3.column
+
+
+ select * from business inner join business_categories inner join cities on business.bc_id=business_categories.id and business.cities_id=cities.id where business.bname like '%gyanodaya%';
+
+
+
+
+tablename.columnname
+
+
+Inner Join
+
+table2		table1			table3
+Country 	States			City
+India		Madhya Pradesh		Indore
+USA		California		San Francisco
+USA		Florida			Miami
+
+output Inner Join
+
+table1
+table2
+table3
+
+select * from table1 inner join table2 inner join table3 on table1.column=table2.column and table3.column=table2.coloumn
+
+select * from states inner join countries inner join cities on states.countries_id=countries.id and cities.states_id=states.id;
+
+
+columnName	DataType	Constraint 	Attribute
+name		varchar(255)	unique
+
+MariaDB [justdial_db]> select countries.name,states.name,cities.name from states inner join countries inner join cities on states.countries_id=countries.id and cities.states_id=states.id;
++-------+----------------+---------------+
+| Country  | name           | name          |
++-------+----------------+---------------+
+| India | Madhya Pradesh | Neemuch       |
+| India | Madhya Pradesh | Indore        |
+| India | Madhya Pradesh | Delhi         |
+| India | Madhya Pradesh | Mumbai        |
+| USA   | California     | San Francisco |
+| USA   | Florida        | Miami         |
++-------+----------------+---------------+
+6 rows in set (0.001 sec)
+
+
+
+Client --requirement---> TCS/Wiporo/Infosys Justdial.com
+Anil
+
+SystemArchitech 10yrs-20Yrs
+
+
+
+SystemDesign
+ 	1. HLD -> HighLevelDesign
+ 	2. LLD -> LowLevelDesign
+ 		LLD is all about the planning of tables in database
+
+
+1. User can review the business
+ 	1-5
+2. User can write the review about the business
+3. User can Post Images about the business
+
+
+
+Requirement Docs  ----> SystemArchitech/BackendEng.
+ 		  ----> UX/UI (Designer)  -> Figma/AdobeXD
+
+
+justdial_db
+ 	1. business_categories
+ 		id  bcname
+ 	2. businesses
+ 		id  bname   bc_id cities_id
+ 	3. cities
+ 		id name
+ 	4. states
+ 		id name cities_id counties_id
+ 	5. countries
+ 		id name
+ 	6. users
+ 		id name surname
+ 	7. reviews
+ 		id reviewContent  reviewStars business_id users_id review_images_id
+ 		   varchar(255)    5
+ 	8. review_images
+ 		id imagePath userId
+
+
+? Who is giving review? users_id
+  To whome he is giving review?  business_id
+  What review he is giving?  reviewContent
+  How much stars he is giving ?  reviewStars
+  Can user upload Images ?
+
+
+reviewStars tinyint unsinged
+ 	0-255
+ 	5
+reviewStars tinyint
+ 	-128 to 127
+
+
+
+Anil    ->   Supreme Ev    	   ->   5    Excellent
+
+Akash    -> Hotel Bharat Palace    ->   1    Very Bad
+
+
+
+Inner Join with 3 tables
+
+users
+business
+reviews table1
+
+
+
+Employess
+
+id	name	salary
+
+a		1000
+b
+c		2000
+d		3000
+e
+
+2nd Higest Salary
+
+select * from tableName order by columnName asc|desc limit offset,limit;
+
+select * from employees order by salary desc limit 1,1;
+
+Syntax ?
+
+insert into tableName (C) values (V);
+
+update tableName set coloumName=value,.. where someCondition
+
+
+
+
+
+
+
+Employees
+
+id	name		salary
+
+1	a		1000
+2	b		2000
+3	c		3000
+4	d		4000
+
+id	name		tenpercentageOfSalary
+
+1	a		100
+2	b		200
+3	c		300
+4	d		400
+
+select id,name,(salary/10) as tenpercentageOfSalary from employees;
+
+DDL
+ 	create
+ 	drop
+ 	alter
+ 	truncate
+DML
+   insert
+   update
+   delete
+DQL
+   select
+Roles :-
+ 	System Roles :-
+
+
+System Design
+
+Client -----> Software
+Mr X ---------> Justdial.com ---> Software
+
+Backend Eng./System Architec
+
+
+Backend System Roles
+
+1. System Roles
+
+Hospital Management System
+System Roles(User TYpes)
+ 	0. Admin
+ 	1. Doctor
+ 	2. OPD incharge
+ 	3. Management
+ 	4. Patient
+
+Ecommerce Platform
+ 	1. Admin
+ 	2. Customer
+ 	3. Employees
+ 
+Online Business Directory
+ 	1. Admin -> Software Creator
+ 	2. BusinessOwner
+ 	3. Employees
+
+
+
+Roles and Permission
+RBAC = Role Based Access Control
+
+
+justdial_db
+ 	1. business_categories
+ 		id  bcname
+ 	2. businesses
+ 		id  	bname   	bc_id 	cities_id  users_id
+ 		o	Raj Saloon	1	1		2
+ 	3. cities
+ 		id name
+ 	4. states
+ 		id name cities_id counties_id
+ 	5. countries
+ 		id name
+ 	6. users
+ 		id 	name 	surname		roles_id
+ 		1	Anil	Dollor		1
+ 		2. 	Manish 	Sn		2
+e
+ 	7. reviews
+ 		id reviewContent  reviewStars business_id users_id review_images_id
+ 		   varchar(255)    5
+ 	8. review_images
+ 		id imagePath userId
+ 	9. roles
+ 		id 	name
+ 		1	admin
+ 		2. 	businessowner
+ 		3.	employee
+
+Get the full details of business owner from city 'Neemuch'
+
+select * from business inner join cities inner join users inner join roles inner join business_categories on business.bc_id=business_categories.id and business.cities_id=cities.id and business.users_id=users.id;
+
+
+MariaDB [justdial_db]> select * from business inner join cities inner join users inner join roles inner join business_categories on business.bc_id=business_categories.id and business.cities_id=cities.id and business.users_id=users.id and users.roles_id=roles.id where cities.name like '%Neemuch%';
++----+------------+-------+-----------+----------+----+---------+-----------+----+--------+-------+-------+----------+----+---------------+----+---------+
+| id | bname      | bc_id | cities_id | users_id | id | name    | states_id | id | fname  | mname | lname | roles_id | id | name          | id | bc_name |
++----+------------+-------+-----------+----------+----+---------+-----------+----+--------+-------+-------+----------+----+---------------+----+---------+
+| 19 | Raj Saloon |     6 |         1 |        5 |  1 | Neemuch |         1 |  5 | Manish | NULL  | Sen   |        2 |  2 | businessOwner |  6 | saloon  |
++----+------------+-------+-----------+----------+----+---------+-----------+----+--------+-------+-------+----------+----+---------------+----+---------+
+1 row in set (0.000 sec)
+
+
+MariaDB [justdial_db]>
+
+MariaDB [justdial_db]> select business.bname,cities.name,roles.name,business_categories.bc_name from business inner join cities inner join users inner join roles inner join business_categories on business.bc_id=business_categories.id and business.cities_id=cities.id and business.users_id=users.id and users.roles_id=roles.id where cities.name like '%Neemuch%';
++------------+---------+---------------+---------+
+| bname      | name    | role          | bc_name |
++------------+---------+---------------+---------+
+| Raj Saloon | Neemuch | businessOwner | saloon  |
++------------+---------+---------------+---------+
+1 row in set (0.001 sec)
+
+MariaDB [justdial_db]>
+
+
+
+
+6. users
+ 		id 	name 	surname	roles_id   email   		password
+ 		1	Anil	Dollor	1          anil@gmail.com	123--->76d878sd
+ 		2. 	Manish 	Sn
+
+
+
+
+
+PlainPassword -------------> EncryptedPassword
+123 	-------------------> 9asd9f7a9s7
+
+MySQL Functions
+
+Encryption FUnction
+
+One Way Hashing Algos
+
+1. SHA -> Secure Hash Algorithm
+2. MD5 -> Message Digest
+
+123  -----SHA2-------->
+123  -----MD5-------->  32 Character
+
+
+select sha2('123', 256)
+a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3
+
+select sha2('123', 512)
+3c9909afec25354d551dae21590bb26e38d53f2173b8d3dc3eee4c047e7ab1c1eb8b85103e3be7ba613b31bb5c9c36214dc9f14a42fd7a2fdb84856bca5c44c2
+
+insert into users(fname,lname,email,password) values ('Anil','Dollor','anil@gmail.com','123');
+
+
+select sha2('123', 512)
+
+
+select MD5('123');
+
+SQL Subqueries/Nested Query -> Count
+1. List users who have not written any review.
+ 	select * from users where  ( select count() from   )
+ 
+roles
+ 	id role_name
+ 
+users
+ 	id name
+ 	1  A    BO
+ 	2. B    Customer
+ 	3. C
+ 	4. D
+ 
+business
+ 	id bname users_id
+ 	1.  B-A	 3
+ 	2.  B-B  4
+ 	3.  B-C	 1
+
+review
+ 	id reviewContent  reviewStars business_id users_id review_images_id
+ 	1	Good	   3              1
+ 	2
+ 	3
+
+
+
+SQL Subqueries/Nested Query -> Count
+
+
+employees
+ 	id  name salary
+ 	1    A     1000
+ 	2.   B      2000
+ 	3    C      3000
+
+
+Question
+Get the salary of all employees whose salary is greater than empId=2
+
+select * from employees where salary >= (select salary from employees where empid=2)
+
+
+
+
+
+
+
+
+
+
+https://www.prisma.io/
+
+
+
+1\. NodeJs Library --> DB Operations
+
+
+
+
+
+Prisma ORM
+
+&nbsp;	Object Relational Manager
+
+
+
+
+
+Types of Database
+
+1.SQL Database
+
+&nbsp;	Structured Query Language
+
+&nbsp;	Eg
+
+&nbsp;	MySQL/MariaDb,Postgres, SQL Server, MS Access, Oracle, Sybase, Informix,
+
+
+
+
+
+2\. NoSQL Database
+
+
+
+&nbsp;	MongoDB
+
+
+
+Prisma ORM  -----> Code -----> Run------> DB Operation   SQL/NoSQL
+
+
+
+
+
+COde --->Write---> File ??? schema.prisma
+
+
+
+
+
+npm init -y
+
+
+
+This command will create a file of type JSON
+
+i.e package.json
+
+
+
+JSON ?
+
+&nbsp;	JavaScript Object Notation
+
+
+
+
+
+JavaScript Object Name,Surname ?
+
+
+
+{
+
+&nbsp;	Key:Value
+
+}
+
+{
+
+&nbsp;	"name":"Anil",
+
+&nbsp;	"surname":"Dollor"
+
+}
+
+
+
+
+
+
+
+File text type
+
+
+
+anil.txt
+
+file pdf type
+
+anil.pdf
+
+
+NodeJs
+
+
+Prisma ORM is a 3rd party library
+
+3rd party Vs Built-in
+
+
+install -------> Internet Download------->**https://npmjs.com**
+
+
+npx = Node Package Execute
+
+
+How to perform DB Operations using NodeJs code ?
+
+
+DB Operation
+
+Shell ---> SQL CMD ---> Enter---> SQL Execute ----> DB Operation
+
+
+
+JS Code  ----- Execute/RUn ---> DB Operation
+
+3rd Lib
+
+Prisma ORM
+Prisma is company
+ORM is a product
+
+https://www.prisma.io/
+
+ORM = Object Relational Mapper
+
+It can work on every kind of Data
+Type of DB
+ 	1. SQL Based DBs
+ 		MySQL,Maridb,Postgress,...
+ 	2. NoSQL Based DBs
+ 		MongoDB
+ 		Document Based
+DB Operation ---> Prisma ORM
+
+model  === Tables
+
+
+1. npm install prisma --save-dev
+2. npm install @prisma/client
+3. npx prisma init  ---> pri
+ 	This will create
+ 		1. .env   DATABASE_URL=""
+ 		2. schema.prisma
+
+4. npx prisma migrate dev --name init
+
+5. npx prisma studio
+
+
+   What is prisma Studio ?
+ 	Prisma Studio is a GUI Software for Database
+
+CLI  vs GUI
+
+
+
+anil_db
+ 	students_tbl
+ 		id fname   last
+
+ 	course_tbl
+ 		id name
+
+
+
+How can I make Prisma generate or update its schema based on an existing database that already has tables?
+
+
+
+
+
+
+Prisma ORM
+SQL Based DBs
+ 	MySQL ----> XAMPP  -----> PhpMyAdmin (GUI)
+NoSQL Based DBs
+ 	MongoDB   ---> MongoDB --> MongoDB Compass(GUI)
+
+ 
+Prisma
+1. Prisma CLI
+2. Prisma Client
+
+
+MySQL
+ 	Database
+ 		Tables
+ 			Record/Data/Entries
+MongoDB
+ 	Database
+ 		Collection
+ 			Documents
+ 
+
+
+
+Prisma Client
+
+
+prisma.table.method()
+prisma.modal.method()
+prisma.students.findMany()-----> Select * from students
+
+
+
+How to check if mongodb service is running or not ?
+
+
+Window + R
+ 	services.msc
+ 		search for mongodb service
+
+
+SQL Based DBs
+ 	Postgress -----> PGAdmin (GUI)
+NoSQL Based DBs
+ 	MongoDB   ---> MongoDB --> MongoDB Compass(GUI)
+
+
+protocol://u:p@hostname:portno
+
+protocol://hostname:portno
+mongodb://localhost:27017
+
+
+Prisma ORM
+SQL Based DBs
+ 	Postgress ---->   PGAdmin (GUI)
+ 	1. PostressDB S/w
+ 	2. PGAdmin S/w
+
+psql ---> CLI (Back Terminal)
+
+PGAdmin ---> GUI
+
+
+mysql -u root -p
+
+.\psql.exe -U admin -h localhost -p 5432
+PS C:\Program Files\PostgreSQL\18\bin> .\psql.exe -U postgres -h localhost -p 5432
+
+\c <dbname>
+
+
+PS C:\Program Files\PostgreSQL\18\bin> .\psql.exe -U postgres -h localhost -p 5432 -d <dbName>
+
+ .\psql.exe -U postgres -P admin -h localhost -p 5432 -d justdial_db
+
+NextJs Day 1
+
+NextJs is a Fullstack Framwork
+
+
+Frontend + Backend = FullStack Eng..
+
+Frontend = ReactJs/VueJs/AngualarJs
+
+Backend Eng.=  ExpressJs/NodeJs
+
+ExpressJs ---> 4months
+
+NextJs ---> 6months
+
+
+NextJs (FullStack Eng..)
+
+NextJs (ReactJs + ExpressJs/Nodejs)
+ 
+
+JavaScript ------->   ReactJs
+JavaScript --------> ExpressJs
+
+
+JavaScript ------------> NextJs
+Variable is used to store data in memory with temporary
+Database is used to store data in HDD with permanent
+
+Function is a reusable block of code
+
+Class is concept that combined function and variable in one unit
+
+Function + Variable -----> Class
+
+
+
+
+Object ?
+
+
+
+You have to generate package.json
+
+npm init -y
+
+
+
+npx create-next-app@latest ----> package.json
+
+
+
+NodeJs
+
+
+JavaScript  ---> Improved version--> Microsoft----> Typescript
+
+
+
+
+
+HTML +  CSS  + JS
+
+
+Object ?
+
+1. JS Object
+ 	1.1  {property:value}
+ 	     {key:value}
+2. Class Object
+
+1. Variable is used to store data
+2. Functions is reusable block of code
+3. Class (Variable+Function)
+4. Object
+
+
+
+
+
+
+
+ls  ---> list
+
+d-----   ------> Permission String-----> Directory
+------   ------> Permission String-----> File
+
+
+cd -----> change directory
+
+
+
+npm run dev  -----> layout.js------>page.js(HTML+CSS+JS)
+
+
+
+
+Chrome Extension
+ 	1. Webappylyzer
+ 	2. Measure-it
+
+VSCode Extension
+ 	1. Fold Level  ->denjay
+ 	2. Simple React Snippets -----> Burke Holland
+ 	3. ES7+ React/Redux/React-Native snippets ----->dsznajder
+
+Empty Tags
+
+<> <--- Start empty tag
+</> <--- End empty tag
+
+
+<h1><h1>
+
+<p>
+
+<a>
+
+
+NextJs Support 2 kind of ROuters
+1. App Router (Recomended Newest) NextJs 15.x
+2. Page Router  (Old way)
+
+Routers --> Traffice Inpectors
+
+
+Traffice ---> COrrection Direction ---> Forward/Route
+
+
+
+
+
+http://localhost:3000/routes
+
+http://localhost:3000/aboutus -------> pages/aboutus/index.js
+
+http://localhost:3000/blog-----------> pages/blog/index.js
+
+
+http://localhost:3000/contactus    ----------->  pages/CONTACTUS/index.js
+
+rfc -> React Functional Component
+
+
+
+2. App Router
+
+http://localhost:3000/aboutus -------> app/aboutus/page.js
+
+http://localhost:3000/blog-----------> app/blog/page.js
+
+
+http://localhost:3000/contactus    ----------->  app/contactus/page.js
+
+http://localhost:3000/aboutus
+http://localhost:3000/blog
+http://localhost:3000/contactus
+
+
+
+What is components in ReactJs ?
+
+Components are basic building block of UI.
+Component are resuable block of of UI Element.
+
+
+
+HTML  --> Structure
+CSS
+
+Cascading Stylesheet
+
+
+HTML + CSS  ---> Basic Component
+
+
+
+HTML  --->
+
+Page1 --------Acnchor <a></a>------> Page2
+
+
+Nextjs ----->ReactJs  --->
+
+Page1 --------Acnchor <a></a>------> Page2
+
+
+http://localhost:3000/aboutus  -> RFC
+http://localhost:3000/blog     -> RFC
+http://localhost:3000/contactus -> RFC
+
+
+http://localhost:3000/ourmission -> RCC (Outdated/Depericated)
+
+
+src/app/ourmission/page.js
+src/app/ourmission/page.jsx  --> Javascript & XML
+ 						Extensible Markup Language
+
+
+src/app/ourmission/page.ts
+src/app/ourmission/page.tsx  --> Javascript & XML
+
+
+Javascript ES6---> Import/Export
+
+EcmaScript
+
+From India we can export anything
+
+In Javascript we can import/export anything(Any JS Concept)
+
+In JS There are 2 ways to export
+1. Default Export
+2. Named Export
+
+
+How to create an API in NextJs?
+
+API ?
+
+Application Programming Interface
+
+Client Server Architecture
+
+
+Client-------------------------Server (API)
+
+Client(Browser)--------
+
+www.google.com---------Request-------->Server (Webserver) (Database)
+
+Webserver
+ 	1. Apache Webser
+ 	2. Ngnix
+ 	3. Tomcat
+
+
+www.google.com <---------Response--------Server (Webserver)
+
+
+
+Client--------------Data-----------Server
+
+
+Client--------------Standard Medium-----------Server
+
+
+Client--------------Anil-------------->Server
+
+
+Standar Medium of Data that can be exchanged between client and server
+1.JSON
+ 	Javascript Object Noation
+ 
+ 	{
+ 		1. P:V
+ 		"CompanyName":"Anil Pvt Ltd"
+ 
+ 	}
+2. XML
+3. SOAP
+
+
+
+
+NextJs  <-----NodeJs<------ Javascript
+
+We need to create an API in NextJs ?
+
+
+Reference
+
+API ?
+
+
+
+
+
+
+Client---------------------------->Server (Database <-Data)
+
+
+Client --------------------------->Request---------------------> Server
+https://jsonplaceholder.typicode.com/users
+
+http://localhost:3000/aboutus
+
+Client <------------ JSON Response---------------- Server
+[
+  {
+    "id": 1,
+    "name": "Leanne Graham",
+    "username": "Bret",
+    "email": "Sincere@april.biz",
+    "address": {
+      "street": "Kulas Light",
+      "suite": "Apt. 556",
+      "city": "Gwenborough",
+      "zipcode": "92998-3874",
+      "geo": {
+        "lat": "-37.3159",
+        "lng": "81.1496"
+      }
+    }
+]
+
+
+https://jsonplaceholder.typicode.com/photos
+
+
+
+
+
+NextJs 16.x
+1. Page
+ 	App/aboutus/page.js
+2. Api
+ 	App/users/route.js
+
+
+
+https://www.justdial.com/Jabalpur/Hotels-in-Rajiv-Gandhi-Chowk/nct-10255012
+
+
+protocal://subdomain.primarydomain.tld/routesegment1/routesegment2/routesegment3
+
+
+https://www.justdial.com/Mumbai/Hotels-in-Rajiv-Gandhi-Chowk/nct-10255012
+
+
+
+Type of Routes
+1. Fixed Routes
+2. Dynamic Routes
+
+
+System Design
+1. HLD
+2. LLD
+ 	Tables Planning
+ 	URL Structure Planing.
+
+
+I want to search Hospital in Indore
+What will be url structure ?
+
+https://example.com/cityName/category/
+
+I want to search Hotel in Delhi
+What will be url structure ?
+
+https://example.com/Delhi/Hotels/
+
+
+Example of Dynamic Routes
+https://example.com/Indore/Hotels/
+
+
+https://example.com/[cityname]/[category]/
+
+How to access/display URL parametes on the page in NextJs
+
+
+JS Object
+{
+ 	P:V
+}
+
+{
+ 	"anil":"anil"
+}
+Shortcut
+
+{
+ 	"anil"
+}
+
+
+async <-- parent
+await <-- child
+
+
+I want to search Hotel in Delhi
+What will be url structure ?
+
+https://example.com/[cityname]/[category]/
+
+
+Database ?
+SqlBased
+ 	MySQL <----SQL CRUD
+ 	Postgress
+
+NoSQL
+ 	MongoDB?
+
+
+
+justdial_db
+ 	1. business_categories
+ 		id  bcname
+ 	2. businesses
+ 		id  	bname   	bc_id 	cities_id  users_id
+ 		o	Raj Saloon	1	1		2
+ 	3. cities
+ 		id name
+ 	4. states
+ 		id name cities_id counties_id
+ 	5. countries
+ 		id name
+ 	6. users
+ 		id 	name 	surname		roles_id
+ 		1	Anil	Dollor		1
+ 		2. 	Manish 	Sn		2
+ 	7. reviews
+ 		id reviewContent  reviewStars business_id users_id review_images_id
+ 		   varchar(255)    5
+ 	8. review_images
+ 		id imagePath userId
+ 	9. roles
+ 		id 	name
+ 		1	admin
+ 		2. 	businessowner
+ 		3.	employee
+
+
+
+
+
+justdial_db
+ 	1. business_categories
+ 		id  bcname
+ 	2. businesses
+ 		id  	bname   	bc_id 	cities_id  users_id
+ 		o	Raj Saloon	1	1		2
+ 	3. cities
+ 		id name
+
+https://example.com/Delhi/Hotel/
+
+
+mysql -u root -p
+
+cmd  cli_arg1 cli_arg2 cli_arg3
+
+
+Prisma ORM
+
+JS Object
+{
+ 	P:V
+}
+
+
+
+
+
+1. Function defination
+function page(fa1,fa2,fa2){
+
+}
+2. Function calling
+
+page(aa1,aa2,aa3)
+
+
+function page(fa1){
+
+}
+
+function page({page:"page"}){
+
+}
+function page({page}){
+
+}
+
+
+
+Client---------------------------->Server (Database <-Data)
+
+
+Client ---------------------------------Request--------------------------> Server (NextJs)
+http://localhost:3000/delhi/hotel
+
+Client <--------------------------------Response------------------------- Server(NextJs)
+
+page Neemuch hotels
+
+
+
+
+Client(NextJs) <--------------------------------Response------------------------- Server(NextJs) <-----PrimsaORM---> Database MySQL
+
+page Neemuch hotels
+
+
+
+NextJs is a fullstack Framwork
+
+
+3rd Party Library
+
+NodeJs 3rd Libary
+
+npm install libname ------> https:://npmjs.com
+
+npm install primsa -------->
+
+
+
+https://example.com/Delhi/Hotel/
+
+Result/Records
+
+
+
+CRUD
+
+
+R -> Read
+
+
+Prisma 7.x
+NextJs 16.x
+
+Database Postgress
+
+
+MySQL Vs POstgress
+
+
+SQL BASED DBs
+
+
+
+Justdial
+
+TechStack
+ 	1. NextJs 16.x
+ 	   Prisma 7.x
+ 	   Postgress
+
+
+
+Which kind of API is this
+http://localhost:3000/api/todos <--route.js
+
+1. GET API
+2. POST API
+3. PUT API
+4. PATCH API
+5. DELETE API
+ 
+
+Clinet -----------> Server
+Clinet <---JSON---- Server <<---- Database
+JSON
+
+{
+ 	P:V
+}
+
+
+Client(NextJs) <------------Response----------- Server(NextJs) <-----PrimsaORM---> Database(PG)
+
+Frontend
+
+
+http://localhost:3000/todos
+
+
+src/app/todos/page.js <---- page.js is a reactJs component
+
+
+Aboutus
+Contactus
+
+
+Todos Page
+
+In ReactJs
+There are 2 types of component
+1. RFC <- React Functional Component
+2. RCC <- React Class Component
+
+
+
+NextJs Component
+
+1. ClientSide Component (React Component) at top "use client"
+2. ServerSide Component
+
+
+
+Function
+1. Defination
+2. Calling
+
+
+
+
+Api Calling
+
+1. XMLHttpRequest (JS Built-in)
+2. Fetch API (JS Built-in)
+3. Axios LIb (3rd party Lib)
+
+
+npm install libname ------> npmjs.com
+
+
+[{…}, {…}, {…}, {…}, {…}]
+
+
+[] = Arrray
+{} = Object
+
+[{},{},{}] = Array of Objects
+
+
+NextJs Component
+
+1. ClientSide Component (React Component) at top "use client"
+2. ServerSide Component
+
+
+
+
+Assignment
+1. Display Todos List on Frontend using ClientSide component 'use client'
+ 	Rendering is done at client side
+ 
+ 	CLient -----Request----> Server <<---- Database
+ 	Clinet <-----JSON Response<---- Server <<---- Database
+ 	AfterPage Reload (useEffect)
+ 	Client -----ApiCall----> Server <<---- Database
+ 	Data Show
+ 
+2. Display Todos List on Frontend using ServerSide component
+ 	Server Render
+ 	CLient -----Request----> Server(page builld/render) <<---- Database
+ 	CLient -----Response---- Server(page builld/render) <<---- Database
+ 	List
+
+
+Clinet <---JSON---- Server <<---- Database
+
+
+Client(NextJs) <------------Response----------- Server(NextJs) <-----PrimsaORM---> Database(PG)
+
+
+ul = unordered List
+li = List Items
+
+
+
+function Anil(fa1,fa2,fa3,fa4){
+ 	//Function Body
+}
+
+
+Client---------------------------->Server (Database <-Data)
+
+
+Client ---------------------------------Request--------------------------> Server (NextJs)
+http://localhost:3000/delhi/hotel
+
+Client <--------------------------------Response------------------------- Server(NextJs)
+
+page Neemuch hotels
+
+
+
+1. Express <--- Backend (To Create APIs)
+2. NextJs  <---- Frontend
+
+
+
+APIs = Application Programming Interface
+
+APIs Testing Tools = Postman
+
+
+
+APIs. ?
+
+Types of HTTP Method
+1. GET <---   Read
+2. POST<----- Create
+3. PUT <----- Update
+4. DELETE <----- Delete
+
+
+CRUD Operation
+C = Create
+R = Read
+U = Update
+D = Delete
+
+JSON File
+
+What package.json
+
+Javascript Object Notation
+
+
+Js OBject
+
+
+{
+ 	Propery:Value
+}
+
+
+
+Lets use Import Export
+
+
+Code Moduler
+
+
+
+String Interpolation
+Variable Substituion
+
+
+``
+
+
+http://localhost:3000/city/state
+
+
+http://localhost:3000/Neemuch/MP
+
+
+http://localhost:3000/:cityName/:stateName
+
+Hello Anil from Neemuch MP
+
+
+Client Server Architecture
+
+Client -------------> Request ----------------------> Server (ExpressJs)
+ 							:3000
+ 
+1. URL Segement	 /Mumbai/Hotels				req.params
+2. QueryString	?cityName=Mumbai&Category=Hotels        req.query
+
+
+
+
+http://localhost:3000/Neemuch/MP
+
+http://localhost:3000/:cityName/:stateName
+req.params
+
+http://localhost:3000/someroute?cityName=Jaipur&state=RJ
+
+Query String
+?name=value&name=value&name=value&......
+
+req.query
+
+http://localhost:3000/Mumbai/Hotels
+http://localhost:3000/:cityName/:categoryName
+
+
+ExpressJs
+object.property
+req.params
+req.query
+
+NextJs
+
+object.property
+
+
+
+Js Object
+
+JavaScript Classes
+
+
+
+class MyClass{
+}
+
+
+JS Keywords
+
+1. class
+2. let
+3. new
+
+30 Keyword for JS
+
+
+Generate a package.json file
+
+npm init -y  -------->   package.json
+
+expressjs ---> WebApplication ----> are used for running the application 24x7
+
+
+nodemon = node + monitor
+
+
+
+
+
+
+// String Interpolation
+// Variable Substituion
+
+
+JS Concatination Operator ----> +
+
+10+20 <----- Addition Operator
+
+
+"Hello" + "Anil" <----- Concatination Operator
+
+
+WebServer
+
+
+
+Client Server Architecture
+
+
+Client ----------------------> Request --------------> Server (1. WebServer 2.Database)
+
+
+ExpressJs is building a webserver on port 3000.
+It is ready to accept your request
+
+URL
+
+Uniform Resource Location
+
+Syntax
+protocol://hostname:portno/routes
+
+https://localhost:3000/routes
+
+Protocol
+1. HTTP
+2. HTTPS
+3. FTP
+4. SSH
+5. SMTP
+
+https://localhost:3000/
+https://localhost:3000
+
+
+
+How to recive query params in ExpressJs ?
+req.query
+How to recieve url segment params in ExpressJs ?
+req.params
+
+
+ExpressJs
+
+Backend Eng.
+
+System Design
+
+1. Info Gathering
+
+2. SystemRoles
+ 	2.1 Admin
+ 	2.2 BusinessOwner
+
+
+
+Hospital Mananagement System
+ 	Admin
+ 	Doctors
+ 	Patients
+ 	OPD Inchage
+ 	Lab
+ 	Chemits
+
+
+School Managment Systems
+ 	1. Admin
+ 	2. Teachers
+ 	3. Parents
+ 	4. Students
+ 	5. Librarian
+
+Service CRM
+ 	1. Admin
+ 
+
+
+
+In this series we are going to create a online business directory like
+Justdial.com
+
+
+SystemRoles
+ 	1. Admin
+ 	2. BusinessOwnwer
+ 	3. Visitors
+ 	4. CustomerCare  ---> 08888888888
+
+
+Users
+ 	1. Admin
+ 	2. BusinessOwnwer
+ 	3. Visitors
+ 	4. CustomerCare  ---> 08888888888
+
+SystemDesign
+ 	1. HLD -> HighLevel Design 5+yrs Backend Eng.
+ 	2. LLD -> LowLevel Desing
+
+
+What is LLD ?
+ 	LLD is all about your table structure planning
+
+
+Database
+ 
+
+Client Server Architecture
+
+Client ------------------Request-------------------> Server (1.WebServer   -------> 2. Database)
+
+Client <------------------Response------------------ Server (1.WebServer   -------> 2. Database)
+
+SignUp
+
+
+Database
+
+
+Database
+ 	Tables
+ 
+ Server (1.Database + 2.WebServer)
+1. ExpressJs
+ 	npm start
+2. Database
+ 	MySQL (Database) <------ SQL Language
+
+ 	2.1 Create database
+ 		create database justdial_db2;
+ 	2.2 Go inside the database
+ 		use justdial_db2;
+ 	2.3 Show tables
+ 		show tables;
+
+
+Black Interface is called CLI Interface
+CLI = Command Line Interface
+
+
+1. CLI = Command Line Interface
+2. GUI = Graphical User Interface
+
+
+Database
+ 	1. roles
+ 		id	role_name
+ 		1	admin
+ 		2	business_owner
+ 	2. users
+ 		id      fname	lname  	roles_id  username email password
+ 		1  	Anil	Dollor	1	  oklabs         12345678
+ 		2.	Vijay	Dabkara 2	  oklabs1        12345678
+
+
+1. User Registration
+ 	1. User Registration API
+2. User Login
+
+Inner Join
+ 	Syntax
+
+
+
+ExpressJs  <- Backend Framwork
+
+
+Backend
+1.  API <- Application Programming Interface
+2. API Test Tool
+ 	Postman
+
+
+
+CMS <- Content Managemetn System
+ Strapi
+Strapi CMS has built-in APIs
+
+
+
+http://localhost:3000/route
+Syntax
+
+protocol://hostname:portno/routes
+
+baseURL = protocol://hostname:portno
+baseAddr = protocol://hostname:portno
+
+POST Method
+ 	POST > BODY > RAW > JSON
+
+Client Server Architecture
+
+Client ------------------Request-------------------> Server (1.WebServer   -------> 2. Database SQlite)
+ 			   JSON
+ 			   {
+ 				P:V
+ 			   }
+Client <------------------Response------------------ Server (1.WebServer   -------> 2. Database)
+ 			   JSON
+ 			200 = ResponseCode
+
+
+
+POST
+http://localhost:3000/api/auth/local/register
+
+
+GET
+ 	req.query
+ 	req.params
+POST
+ 	req.body
+
+Syntax
+ 	alter table tablename add columnName DataType     Constraint;
+Example
+ 	alter table users     add username   varchar(255) unique;
+
+
+DevOps Course
+ls
+
+d-----  = directory
+
+------- = File
+
+
+Anil.txt
+
+cat Anil.txt
+
+Strapi CMS <- Headless Content Management System
+package.json
+ 	script:{
+ 		"dev":  <--  npm run dev
+ 		"start" <--  npm start
+ 		}
+
+
+Express
+
+package.json
+ 	script:{
+ 		"start":
+ 	}
+
+
+
+Backend Eng...
+
+System ROles
+ 	Apis
+
+
+Application Programming Interface
+
+
+Tools/Software
+Postman Software
+
+
+http://localhost:1337
+
+PortRange =
+
+0 - 65535.
+
+
+To understand How API works ?
+
+.
+JS Object
+{ P:V }
+
+
+Frontend Devlopment <--
+
+ReactJs <----- APIs   <---- Strapi
+
+
+Backend Development
+ 		APIs <- We will create our own APIs with the ref of Strapi
+
+
+
+Database
+ 	1. roles
+ 		id	role_name
+ 		1	admin
+ 		2	business_owner
+ 	2. users
+ 		id      fname	lname  	roles_id  username email password
+ 		1  	Anil	Dollor	1	  oklabs         12345678
+ 		2.	Vijay	Dabkara 2	  oklabs        12345678
+
+
+endpoint/Api
+
+POST Method
+ 	POST > BODY > RAW > JSON
+
+
+Jo Liya Vo Hi Denge
+
+
+Payload --> Recieve
+Client ------------------Request-------------------> Server (1.WebServer   -------> 2. Database)
+
+Postman						       ExpressJs Application 3000
+ 											Database->Tables->Records
+ 											justdial_db2 -> users --> Records/Entries
+Shubham															Shubham
+
+
+ExpressJs  --------> Database
+
+1. MySQL2
+2. Prisma
+
+
+Plaload ---> Return
+
+
+
+Variable Substitution
+String Interpolation
+
+
+``
+
+
+User Registration
+ 	1. roles
+ 	2. users
+
+Database
+ 	1. roles
+ 		id	role_name
+ 		1	admin
+ 		2	business_owner
+ 	2. users
+ 		id      fname	lname  	roles_id  username email password
+ 		1  	Anil	Dollor	1	  oklabs         a8sd7f987as9d7f98
+ 		2.	Vijay	Dabkara 2	  oklabs        a9sdufoasdfkasdhfkj
+
+
+
+Password are always stored in encrypted
+
+
+
+Hackers
+
+12345678 = Plain Password
+
+
+PlainPassword -------> Encrypt -------> EncryptedPassword
+
+
+Hashing Algorithms
+
+1. MD5 = Message Digest 5
+ 	MD1
+ 	MD2
+ 
+ 	MD5
+
+
+Algorithms = Algos
+
+
+
+C/C++ --------> Javascript -----> Nodejs ---> ExpressJs---> NextJs
+
+
+
+
+crypto 3rd party lib
+
+
+npm install libName;
+
+
+
+NodeJs Lib
+
+Crypto Module is built-in Module of Nodejs
+
+
+OneWay Hash Algorithms
+
+crypto module is built-in nodejs module
+
+1. MD5   Length = 32
+ 	Message Digest
+
+ 	Plain ----------> Hash/EncryptedTEst
+
+ 	Plain <---X----- Hash/EncryptedTEst
+
+2. SHA1   Length = 40
+ 	Secure Hash Algorith 1
+
+3. SHA256
+ 	Length = 63
+
+4. SHA512
+ 	Length = 128
+
+Bcrypt module is a 3rd party module
+5. Bcrypt
+
+
+module=library
+
+
+JWT = JSON Web Token
+
+
+Users Register
+ 	1. Admin
+
+
+Strapi APIs
+ 	http://localhost:1337
+ 
+ExpressJs APIs
+ 	http://localhost:3000
+ 
+ 	1. Login
+ 	2. API Protected
+
+ 	CRUD Operation
+ 	GET http://localhost:1337/api/teachers
+
+Types of APIs
+
+1. Public APIs  <-- Friend
+ 	JWT TOken not required
+ 	CRUD
+ 	Create Read Update Delete
+
+ 	http://localhost:1337/api/friends
+
+2. Private/Authenticated APIs <--- Teacher
+ 	JWT Token is required
+ 	CRUD
+ 	Create Read Update Delete
+
+ 	GET http://localhost:1337/api/teachers
+
+
+When you get the JWT TOken ?
+
+When we login into the system ?
+username
+password
+ 	------> JWT
+
+JWT --> Tamper ---> JWT Invalid
+
+JWT
+
+A.B.C
+
+HEADER.PLAYLOAD.SIGNATURE
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwiaWF0IjoxNzY2NjM1Mjc0LCJleHAiOjE3NjkyMjcyNzR9.Kb0U1NElh6NvXGazLcKOsUxnMXl1V1W7b8VH3ZsimVM
+
+
+
+ request.headers.authorization;
+
+
+"Bearer 123" === Break ==== Array  []
+
+
+[0,1,2,3]
+  0     1
+
+
+Client ------------------Request-------------------> Server (1.WebServer   -------> 2. Database)
+
+
+
+
+1. JWT Create
+ 	object.method(aa1,aa2)
+ 	jwt.sign()
+
+2. JWT Verify
+ 	object.method(aa1,aa2)
+ 	jwt.verify()
+
+
+JWT TOKEN
+
+A.B.C
+
+HEADER.PLAYLOAD.SIGNATURE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Backend Eng
+
+Database Software infomation Permanent Store
+
+1. MYSQL
+ 	SQL Laungage
+ 	Structured Query Language
+
+ 
+
+mysql 	 -u 	root 	-p
+command  arg1   arg2	arg3
+
+sumit_db;
+
+   postfix
+
+
+prefix
+
+Mr Anil Dollor
+
+
+
+1. Create Database
+ 	create database <databaseName>;
+ 	sumit_db;
+2. Go inside the database
+ 	use <databaseName>;
+3. Create Table
+ 	coaching_tbl;
+4. Insert Data
+ 	insert into tableName
+5. Select the data
+
+
+
+
+Language   Javascript
+
+[] = Array
+{} = Object
+[{},{},{}] = Array Of Object
+ 
+
+
+API Response
+
+
+MetaData is very Imp for Pagination System
+
+Frontend Eng.  --> Pagination SYstem
+
+
+{
+    "data": results,
+    "meta": {
+        "pagination": {
+            "page": 1,
+            "pageSize": 25,
+            "pageCount": 1,
+            "total": 3
+        }
+    }
+}
+
+
+Syntax
+	select * from tableName limit offset,limit;
+	
+	select * from tableName limit 0,5;
+Example
+select * from teachers limit 0,5;
+select * from teachers limit 0,5;
+I want only 5 record per page
+
+
+
+Postman is our API Testing Tools/Software
+
+
+Java Developer
+Python Deve
+.NET
+
+
+
+Backend framework + Database
+ExpressJs + MySQL
+
+
+NextJs  + Postgress
+
+
+
+PMA = PhpMyADMIN is GUI Software
+
+API = Endpoint
+
+
+
+Lets create a pagination meta data
+
+"page": 1,
+"pageSize": 2,
+"pageCount": 12,
+"total": 24
+
+You have 100 teachers in your DB
+
+
+Query String
+	?name1=value1&name2=value2&name3=value3
+
+Syntax
+	protocol://hostname:portno/routes?name1=value1&name2=value2&name3=value3
+Example
+	http://localhost:3000/api/something?pagination[page]=1&pagination[pageSize]=10
+
+
+
+
+
+
+
+
+?name=Anil
+
+
+req.query
+req.body
+req.params
+
+
+
+
+
+Type Casting
+	1. Implicit Automatically
+	2. Explicit Forcefully  Developer
+
+INT   ------->   String
+2		  "2"
+
+String -------parseInt()-------> INT
+"2" 				  2
+
+OneDataType ------> AnotherDataTypes
+
+??
+Nullish Coalescing operator
+
+
+ LEFT ??  RIGHT
+
+let result = leftOperand ?? rightOperand;
+let result = leftOperand || rightOperand;
+
+| = Pipe
+|| = Javascript Operator 
+	Logical OR Operator
+
+	Left  || Right
+
+
+
+How to calculate the total records in a table ?
+
+count sql funciton
+
+var myfriends = ['vijay','rakesh']
+
+
+console.log(myfriends[1]);
+
+
+
+Math.ceil
+Match.floor
+
+
+4.166666666666667  ---> ceil----> 5
+4.166666666666667  ---> floor----> 4
+
+4.999999999999999  ----> floor ----> 4
+4.000000000000001  ----> ceil -----> 5
+
+REST API ?
+
+
+REST ?  Represantational State Transfer
+API ? Application Programming Interface
+
+
+
+
+http://localhost:3000/api/teachers?sort=name:asc
+
+1. Sorting System
+2. Pagination System
+3. Filtering System
+SQL 
+			 Filtering System			Sorting System		   	     Pagination System
+
+select * from tablename <where somecondition>      	 <order by coloumName asc|desc>        <limit offset,limit>;
+			?filters[coloumName][$eq]=Anil   ?sort=coloumName:asc                  ?pagination[page]=1&pagination_pageSize=10            
+
+
+"name:asc"
+
+"Bearer alskjdflajsdfljalsjdlkj"
+
+
+JS Split
+
+string.split(separator, limit)
+	separator =  :
+"name:asc"
+
+
+===
+
+==
+if(a === b){
+}
+
+if(a == b){
+}
+
+if(a === b){
+}
+
+if(2 == "2"){
+		True
+}
+
+if(2 === "2"){
+		False
+}
+
+
+Master Syntax Format
+
+SELECT [DISTINCT] column1, column2, aggregate_function(column)
+FROM table_name
+[JOIN table2 ON condition]
+[LEFT | RIGHT | INNER | FULL JOIN table3 ON condition]
+[WHERE condition]
+GROUP BY column1, column2
+HAVING group_condition
+ORDER BY column_name ASC | DESC
+LIMIT offset, row_count;
+
+
+select count(*) from teachers
+
+select aggrigationFunction(column) from table
+
+
+
+
+
+
+1. Sorting System
+	http://localhost:3000/api/teachers?sort=name:asc
+2. Pagination System
+	http://localhost:3000/api/teachers?pagination[page]=1&pagination_pageSize=10
+3. Filtering System
+	http://localhost:3000/api/teachers?filters[coloumName][$eq]=Anil
+SQL 
+			 Filtering System			Sorting System		   	  Pagination System
+
+select * from tablename <where somecondition>      	 <order by coloumName asc|desc>        <limit offset,limit>;
+			?filters[coloumName][$eq]=Anil   ?sort=coloumName:asc                  ?pagination[page]=1&pagination_pageSize=10   
+
+
+
+SQL
+
+Master Syntax Format
+
+SELECT *
+FROM table_name
+WHERE condition;
+
+
+http://localhost:3000/api/friends?filters[coloumName][$eq]=Anil
+
+http://localhost:3000/api/friends?filters[fullname][$containsi]=nil
+
+Case
+	1. UPPERCASE
+	2. lowercase
+
+ANIL
+Anil
+
+
+http://localhost:1337/api/friends?filters[name][$containsi]=nil
+http://localhost:3000/api/friends2?filters[name][$containsi]=nil
+
+
+{"msg":"OK"}
+
+{"P":"V"}
+
+
+
+Query String
+?name=value&name=value&name=value&name=value&
+
+
+https://www.amazon.in/route_segment1/route_segment2/route_segment3/
+
+
+SQL Revision
+
+CRUD
+C = Create Operation
+R = Read Operation
+U = Update Operation
+D = Delete Operation
+
+1. Create Database
+ 	create database <databaseName>;
+ 	sumit_db;
+2. Go inside the database
+ 	use <databaseName>;
+3. Create Table
+ 	coaching_tbl;
+	create table tableName (
+		columnName datatype Constraint,
+		columnName datatype Constraint
+	}
+4. Insert Data
+ 	insert into tableName
+5. Select the data
+
+
+
+Database is a software which store permanent information
+
+DataType
+	1. SQL Based Database
+		SQL Lanuguage
+		Structured Query Language
+		
+		1.1 MySQL/Mariadb
+		1.2 Postgress
+
+# mysql -u 		root 		-p
+  cmd   cliarg1		cliarg2		cliarg3
+
+cli = command line interface
+
+	2. NoSQL Based Database
+
+SQL Command TYpes
+
+1.DDL = Data Defination Lanaugae
+	create  database/table
+
+1. Show database
+	show databases;
+	
+2. Create Database
+	create database jan3_2025_db;
+
+
+	Create database A_db;
+	create database b_db;
+	create database c_db;
+3. Go inside database
+	use <databaseName>;
+	use a_db;
+
+4. show tables;
+5. Create a table
+	create table <tableName>(
+		columnName DataType [Contraint],
+		columnName DataType [Contraint],
+		....
+	);
+
+
+Friends
+	1. 
+
+6. Show the table structure
+	6.1 explain <tableName>;
+	6.2 describe  <tableName>;
+	6.3 desc <tableName>;
+7. Insert Some Records/Entries/Rows  ---> Create Operation
+	insert into tableName (C) values ('V');
+	
+	
+
+Syntax
+
+8. Show the inserted records ---> Read Operation
+	select * from tableName;
+
+9. Update some records
+	update tableName set columnName=value where somecondition
+
+10. Delete some records
+	delete from tableName where somecondition
+
+	delete from friends where name='Rakesh';
+
+Rahul 888888888------->77777777
+
+
+CRUD
+
+C = Insert Into
+R = Select
+U = Update
+D = Delete 
+
+
+Assignment
+1. Sorting System
+	http://localhost:3000/api/teachers?sort=name:asc
+2. Pagination System
+	http://localhost:3000/api/teachers?pagination[page]=1&pagination_pageSize=10
+3. Filtering System
+	http://localhost:3000/api/teachers?filters[coloumName][$eq]=Anil
+
+
+
+All the combined behaviour
+
+http://localhost:3000/api/teachers?sort=name:asc&pagination[page]=1&pagination_pageSize=5&filters[name][$containsi]=Anil
+
+
+
+
+Middlewares (,next)
+
+Client					    Server		Database
+	----------------Request------------>      ------------>
+	----------Invalid JWT-------------->
+	<---------------Response-----------      <------------
+
+
+Middlewares are some function/logic which check for request validation
+
+
+app.get('/route',(req,res,next)=>{});
+
+
+app.get('/route',(req,res,next)=>{},(req,res)=>{});
+
+app.get(route,middlewareFunction,callbackFunction);
+
+
+route -----> middlewareFunction-------> callbackfunction
+
+/route1----> middlewareFunction-------> callbacfunction
+	     (req,res,next)=>{}
+		
+/route1					
+Anil						Sunil
+
+Middleware can perform data tranformation
+Middleware can check for JWT Tokens
+
+
+
+
+app.get('routeName',[middlewareFunction],callbackFunction);
+app.get('/hello',(req,res)=>{})
+
+app.post('routeName',[middlewareFunction],callbackFunction);
+app.post('/hello2',(req,res,next)=>{},(req,res,next)=>{})
+
+
+app.get('routeName',[middlewareFunction1],[middlewareFunction2],[middlewareFunction3],callbackFunction);
+app.get('/hello',(req,res,next)=>{ next(); },(req,res,next)=>{ next(); },(req,res,next)=>{ next(); },(req,res)=>{},)
+
+app.get('routeName',[middlewareFunction],callbackFunction);
+app.get('/hello',(req,res)=>{})
+
+
+
+("route"----->mF1---next()---->mF2----next()---->mF3------next()----> CBFN)
+
+CBFN = CallbackFunction
+
+MFN = MiddlewareFunction
+
+Linux OS Commands 
+
+DevOps Eng.
+
+mkdir = make directory
+cd = change directory
+pwd = present working directory (Abhi hum kaha hai)
+      Print working directory 
+
+
+
+Lets Revise SQL
+
+Structured Query Language
+
+
+
+NOW() function is a mysql function
+
+
+
+
+
+
+create table tableName(
+columnName dataType [Constraint] [Attribute]
+
+
+alter table tableName add columnName dataType [Constraint] [Attribute] after/first
+
+NextJs have 2 Routing System
+
+1. Page Router  (Old)  NextJs  12 Below
+	src/page
+2. App Router   (New)  NextJs 13+
+	src/app
+
+
+We legacy Support
+
+
+
+1. We need to decide route
+2. Which Route load which page
+
+
+Base URL
+http://localhost:3000/aboutus
+http://localhost:3000/contacus
+http://localhost:3000/blog   
+			src/app/blog/page.js
+
+
+
+
+Master Syntax Format
+
+SELECT [DISTINCT] column1, column2, aggregate_function(column)
+FROM table_name
+[JOIN table2 ON condition]
+[LEFT | RIGHT | INNER | FULL JOIN table3 ON condition]
+[WHERE condition]
+GROUP BY column1, column2
+HAVING group_condition
+ORDER BY column_name ASC | DESC
+LIMIT offset, row_count;
+
+
+How many distinct first names are present in the table?
+
+select count(distinct fname) from students_tbl
+
+Distinct = Unique
+
+
+Student
+	fname Lname
+	Anil Dollor
+	Anil Sharma
+	Anil Kumar
+	Anil Dubey
+
+
+1. Create DB
+2. Show DB
+3. Go inside DB
+4. Create the table
+	
+
+Syntax
+create table tableName(
+	columnName Datatype  [Constraint] [Attribute],
+	Mandatory  Mandatory Optional     Optional
+
+Example
+create table students_tbl(
+	stud_id int unsigned  primary key auto_increment,
+	fname varchar(255)	
+
+
+
+Write a query to get all unique first names (fname) from students_tbl.
+select distinct fname from students_tbl;
+
+
+Function()
+Count()
+
+
+NextJs contains ReactJs
+
+Frontend is controlled or created React
+
+UI
+
+React Is A SPA Application
+
+SPA = Single Page Application
+
+
+Single Page = Layouts.js
+
+A layout is UI that is shared between multiple pages. 
+
+
+Frontend
+What is a component ?
+
+Component is basic building block of UI
+
+THere are 2 types of component in React
+1. RFC
+2. RCC
+
+
+SQL Revision
+
+Master Syntax Format
+
+SELECT [DISTINCT] column1, column2, aggregate_function(column)
+FROM table_name
+[JOIN table2 ON condition]
+[LEFT | RIGHT | INNER | FULL JOIN table3 ON condition]
+[WHERE condition]
+GROUP BY column1, column2
+HAVING group_condition
+ORDER BY column_name ASC | DESC
+LIMIT offset, row_count;
+
+Syntax
+	SELECT aggregate_function(column) FROM tablename GROUP BY columnName
+Example
+	SELECT count(customer) FROM tablename GROUP BY country
+
+Plz tell the CountryWise customer count
+
+customers
+
+customerName	countryName
+Anil		India
+Nidhi		India
+Vijay		Australia
+Shubham		USA
+Priyush		USA
+
+country ---> countryName
+
+Alter table TableName Add columnName DataType [Constrain] [Attribute];
+
+alter table customers add country varchar(255) after custName ;
+
+
+Alter table TableName drop columnName;
+
+
+country ---> countryName
+
+Alter table TableName Modify columnName DataType [Constrain] [Attribute];
+
+Alter table TableName RENAME columnName DataType [Constrain] [Attribute];
+
+
+
+https://www.justdial.com/cms/career-opportunities
+
+https://www.justdial.com/cms/overview
+
+
+
+Different Routes have Different Layouts
+
+https://www.justdial.com/online-bill-payment  ---> BOX Type Layout
+
+
+
+https://www.justdial.com/online-bill-payment/mobile-recharge
+
+		src/online-bill-payment/mobile-recharge/page.js
+		src/online-bill-payment/layout.js	
+
+https://www.justdial.com/online-bill-payment/mobile-recharge
+
+https://www.justdial.com/online-bill-payment/water
+
+JD = Job Description
+
+
+
+Types of Databases
+1. SQL Based (Relational Database)
+	SQL Language will work
+	1. MySQL
+	Database ----> Tables-------> Data/Records/Entries
+2. NoSQL Based 
+	SQL Lanuage will not work
+	1. MongoDB
+	Database ----> Collection ----> Document
+
+
+.msi file 757mb
+you will download from internet
+
+MongoDb will be installed on your system
+
+Every db run as background service
+They dont have a UI
+1. MySQL has not UI becoz it run in Bg
+2. Mongodb also run in background that why it has no UI
+
+Mongodb
+Mongodb + UI which need to be downloaded externally
+
+*.msi   +  mongodb compas
+
+window + r
+services.msc
+
+
+
+MySQL + PhpMyAdmin (PMA)
+
+MongoDb + Mongodb Compass
+
+
+2. NoSQL Based 
+	SQL Lanuage will not work
+	1. MongoDB
+	Database ----> Collection ----> Document
+
+	jan14_2026----> students	Nidhi
+
+					BSON
+					Binary JSON
+JS Object/ JSON Object
+{ p:v,p:v,p:v }
+{type:"Fiat", model:"500", color:"white"};
+
+					Binary Javascript Object Notation	
+					{
+						"student_name":"Nidhi"
+					}	
+
+object.method(aa)
+db.createCollection("tableName")
+db.createCollection("collectionName")
+db.createCollection("posts")
+db.createCollection("students")
+
+Syntax
+	db.collectionName.insertOne(BSON)
+	db.collectionName.insertOne({"P":V,"P":V})
+Example
+	db.students.insertOne({ "student_name": "Nidhi" })
+	db.students.insertOne({ "name": "Sunil" })
+
+[{},{}] = Array of Object
+[] = Array
+{} = Object
+[{},{}] = Array of Object
+{p:v}
+
+Syntax
+	db.collectionName.insertMany([{},{}])
+
+Example
+	db.students.insertMany([{"student_name":"Vijay"},{"student_name":"Shubham"}])
+
+
+Syntax
+	db.collectionName.find(queryObject)
+
+	db.collectionName.find({"student_name":"Nidhi"})
+
+
+$regex = Regular Expression
+
+$option = 
+
+"i" = Case Insensitive
+
+
+
+CRUD 
+C = Create 
+	db.collectionName.insertOne({})
+	db.collectionName.insertMany()
+
+
+
+select * from students
+
+db.students.find()
+
+
+db.collectionName.find()
+db.collectionName.find([aa1][,aa2])
+
+db.collectionName.find({}[,{}])
+
+
+db.collectionName.find(queryObject,projectionObject)
+db.collectionName.find({},{})
+
+
+0 or 1
+0 = False = No
+1 = True  = Yes
+
+MongoDb					MySQL
+queryObject=filterObject
+db.students.find(query/filterObject,projectionObject)
+db.students.find({},{})
+
+db.students.find({},{_id:0, field1: 1, field2: 1,field3: 1  })
+
+db.students.find({},{_id:0, name: 1, surname: 1  })
+
+db.students.find({},{_id:0, field1: 0, field2: 0,field3: 0  })
+db.students.find({},{_id:0, name: 0, surname: 0  })
+db.students.find({},{_id:1, name: 0, surname: 0  })
+
+db.students.find()			select * from student;
+db.students.find({},{surname: 0})	select id,name from student;
+db.students.findOne()			select * from student limit 1;
+
+Vikas
+fieldName:{ $regex: "^v", $options: "i" }
+
+Raghav
+fieldName:{ $regex: "v$", $options: "i" }
+
+i = case insensitive
+
+p
+P
+
+regex = 
+reg = Regular 
+ex =  Expression
+
+
+{P:V} = JSON = Javascript Object Notation
+
+BSON = Binary JSON
+
+Case InSensitive
+fieldName:{ $regex: "p", $options: "i" }
+
+
+Case Sensitive
+fieldName:{ $regex: "p"}
+
+
+There are 2 find methods
+1.find()
+	db.collection.find(queryObject,projectionObject)
+2.findOne()
+	db.collection.findOne(queryObject,projectionObject)
+
+
+
+db.collection.updateMany(
+   <filter>,
+   <update>,
+   <options>
+);
+
+
+db.collection.updateOne(
+   <filter>,
+   <update>,
+   <options>
+);
+
+db.collection.updateMany(
+   <filter>,
+   <update>,
+   <options>
+);
+
+
+
+db.students.updateMany(
+   {},
+   {},
+   {}
+);
+db.students.updateMany(
+  { name: { $regex: "nil", $options: "i" } },
+  { $set: { surname: "Sharma" } }
+)
+
+
+
+
+db.collection.updateMany({}, { $inc: { likes: 1 } })
+
+
+
+
+For Example we have 2 tables
+
+SQL Join     ~     Mongo Aggrigation Pipeline
+
+
+1. table1		collectio1
+2. table2		collection2
+
+
+1. customers
+	1. Anil		Neemuch
+	2. Nidhi	Delhi
+2. Order
+	2. Laptop	1
+	3. Phone	2
+
+Final Output
+	2. Laptop	Anil
+	3. Phone	Nidhi
+
+
+
+
+
+Master Syntax Format
+
+SELECT [DISTINCT] column1, column2, aggregate_function(column)
+FROM table_name
+[JOIN table2 ON condition]
+[LEFT | RIGHT | INNER | FULL JOIN table3 ON condition]
+[WHERE condition]
+GROUP BY column1, column2
+HAVING group_condition
+ORDER BY column_name ASC | DESC
+LIMIT offset, row_count;
+
+
+MariaDB [jan19_2026]> select * from orders inner join customers on orders.custId=customers.id;
++-----+--------+---------+---------+----+-------+---------+
+| oid | custId | product | amount  | id | name  | city    |
++-----+--------+---------+---------+----+-------+---------+
+|   1 |      1 | Laptop  | 5000.00 |  1 | Anil  | Neemuch |
+|   2 |      2 | Phone   | 3000.00 |  2 | Nidhi | Delhi   |
+|   3 |      2 | Phone   | 3000.00 |  2 | Nidhi | Delhi   |
+|   4 |      1 | Mouse   | 1000.00 |  1 | Anil  | Neemuch |
++-----+--------+---------+---------+----+-------+---------+
+4 rows in set (0.001 sec)
+
+MariaDB [jan19_2026]> select * from customers inner join orders on orders.custId=customers.id;
++----+-------+---------+-----+--------+---------+---------+
+| id | name  | city    | oid | custId | product | amount  |
++----+-------+---------+-----+--------+---------+---------+
+|  1 | Anil  | Neemuch |   1 |      1 | Laptop  | 5000.00 |
+|  2 | Nidhi | Delhi   |   2 |      2 | Phone   | 3000.00 |
+|  2 | Nidhi | Delhi   |   3 |      2 | Phone   | 3000.00 |
+|  1 | Anil  | Neemuch |   4 |      1 | Mouse   | 1000.00 |
++----+-------+---------+-----+--------+---------+---------+
+4 rows in set (0.000 sec)
+
+MariaDB [jan19_2026]>
+
+
+db.orders.aggregate([
+  {
+    $lookup: {
+      from: "customers",
+      localField: "custId",
+      foreignField: "_id", 
+      as: "customer"
+    }
+  },
+  { 
+    $unwind: "$customer"    
+  }
+]);
+
+https://www.justdial.com/
+	src/app/layout.js
+
+http://localhost:3000/ = https://www.justdial.com/
+
+
+https://www.justdial.com/online-bill-payment/mobile-recharge
+		 src/app/
+
+
+
+
+Project Management
+
+Professional Tool	
+	Google Chrome
+	Google Pixel
+	Microsoft Surface
+	MicroSoft VS COdeeditor
+	
+	Atlassian Jira  <---- Setup DevOps Engineers i.e Vijay, Shubham
+
+	Jira Task
+	Dev1 ---> Task1
+	Dev2 ---> Task2
+Unprofessional Too
+	WhatApp Group
+	
+
+
+Project Documention
+
+Unprofessional
+	txt file
+
+Professional
+	Atlassina Confluence
+
+
+Engineering Standup Meeting
+	Everyday Mon-Sat 
+	11:00 AM
+
+	Google Meet Link
+	
+	Everyone you have share you email addr
+
+Everybody can work from remote (WFH)
+
+
+
+
+Import Export Portal
+
+
+Importer
+Exporter
+
+	Both have to upload some kind of documents
+
+
+
+
+
+How to upload a document in NextJs ?
+
+File Uploading
+
+
+Client ---------------Request----------------> Server
+a.pdf ----------------upload-----------------> Server
+a.png
+a.jpg						Permantly Save
+
+Wheneve we upload a file
+1. POST method
+
+	
+What is a file ?
+Video  .mp4/
+Audio  .mp3/.wav
+pdf
+xls
+doc
+txt
+.js
+
+
+
+
+
+Anil (Importer) ------> Comercial Invoic ---------> Sever -------
+
+
+
+Where you can store the docs on server ?
+1. Server itself filesystem (Code + Files )
+2. 3rd party services
+	AWS S3
+	    Simple storage Service
+
+
+ESOP
+Employe Stock Options
+
+
+Base Salary + Stock
+         Perks
+
+
+We will decide our upload directory path
+
+./
+
+./src
+
+./src/app
+
+.src/app/upload
+
+
+html
+
+tag
+
+<startag attribute="value" attribute="value" >content Area</endtag>
+
+<h1 class="a"></h1>
+<h1 id="b"></h1>
+
+React
+
+
+Components
+
+<StartComponent property="values"></EndComponent>
+
+<Head></Head>
+<Script src=""></Script>
+
+
+
+
+NextJs
+
+1. API
+
+
+
+POSTMAN
+
+POST > BODY > form-data  
+		key   filetype
+		bill_of_lading	file
+
+http://localhost:3000/api/docUpload
+
+Client ------POST Request  -----> Server
+Client <------ JSON RESPONSE  ----- Server
+
+
+XML OLD
+PostMan
+
+
+
+var formData = {
+  bill_of_layding: File {
+    size: 63917,
+    type: 'image/jpeg',
+    name: 'WhatsApp Image 2026-01-20 at 16.47.34.jpeg',
+    lastModified: 1769227051090
+  },
+  commercial_invoice: File { size: 0, type: 'text/plain', name: '', lastModified: 1769227051090 },
+  certificate_of_origin: File { size: 0, type: 'text/plain', name: '', lastModified: 1769227051091 }
+}
+
+
+
+
+(file && (0 === 0))
+
+(True)
+
+(False)
+
+
+http://localhost:3000/api/docUpload
+	post > body -> form-data
+	
+	key   filetype
+	bill_of_lading	file
+
+data-storage/uploads/1/bill_of_layding/1.png
+data-storage/uploads/1/commercial_invoice/ci.pdf
+
+tables
+	users
+	roles
+
+http://localhost:3000/api/register
+	fnama
+	lname
+	email
+	pass
+	cpass
+	role_type  exporter|importer|expoter_importer
+
+Hash Algo
+	
+
+http://localhost:3000/api/login
+	email
+	pass
+		
+	JWT 
+	{
+		
+	}
+
+
+ImportExport
+
+Roles
+	1. Importer
+	2. Exporter
+	3. ImporterExporter
+	
+Types of DBs
+	1. SQL Bases
+		1.1 POstgres
+		1.2 MySQL
+	2. NoSQL Based
+		2.1 Mongo
+
+
+NextJs + Postgress + GUI 
+
+	
+NextJs + CRUD
+	 ORM Engine
+	Object Relational Mapper
+	All Table ---> Some JS OBject
+	
+	user
+		id    username	 password
+
+	ORM Engine
+		user {
+			P:V
+			id:"",
+			username:"",
+			password:""
+		     }
+	
+	We never use RAW/Plain SQL Query
+	"select * from user"
+	"insert into user"
+	"update user"
+
+
+
+System Design
+	1. HLD -> High Level Design
+	2. LLD	-> Low Level Design
+
+
+Tables
+	
+Users
+Roles
+	1. Importer
+	2. Exporter
+	3. ImporterExporter
+
+
+roles
+	id	name			role_code
+	1	Importer		importer
+	2. 	Exporter		exporter
+	3.	ImporterExporter	importer_exporter
+	4. 	Admin			admin
+	5	CustomerCare		customercare
+
+
+users
+	
+	id	fname	lname	username	password	roles_id	
+	1. 	Anil 	Dollor	oklabs		asdkfakjsh	    3
+	2.      Nidhi	Sharma	nidhi		ksahdjf		    1
+	3. 	Astha	Agrwal	astha		asljdflasjdf	    2
+	4.      Palak	Agrwal	palak		odydufigodu         4
+
+
+
+Seeding the Roles data
+
+npx prisma db seed
+
+
+http://localhost:3000/api/register
+	fnama
+	lname
+	email
+	pass
+	cpass
+	role_type  exporter|importer|expoter_importer
+
+
+
+DevOps ----> Windows OS
+
+DevOps  LinuxOs
+
+1. gitbash
+2. wsl
+	Windows Subsystem Linux
+
+NextJs with TS 
+
+
+PowerShell CMD (Teminal Admin)
+
+Win + X
+
+wsl --install
+wsl --install -d Ubuntu-22.04
+wsl
+
+
+Linux Ubuntu
+Linux RedRat
+Linux Centos
+Linux Opensuese
+Linux Kali
+
+
+whoami
+
+pwd
+present working directory
+
+
+cd = change directory
+
+
+
+
+Typescript ----TSC---> Javascript ------> Execute
+
+
+tsc
+  Typescript Compiler which convert Ts Code into Js code
+
+Microsoft
+	BigGales
+
+Javascript + Types = Typescript
+
+
+How to create a file in Linux
+
+Vim anil.txt
+
+
+
+references = SQL FOREIGN KEY
+
+
+Ts Code -----TSC----> Js Code
+
+
+
+Typescript
+
+let   variable: type;
+var   variable: type;
+const variable: type;
+      variable: type
+	fa1: number
+  let variable: any;
+
+
+layout.tsx
+page.tsx
+
+ts = typescript
+x  = xml = Extensible Markup Language
+
+
+
+
+You need to register the user
+
+You need to insert something in db
+
+1. API  -----> Frontend Call the APi ---->
+	Client Side Component   "use client"
+	http://localhost:3000/api/v1/register
+	http://localhost:3000/api/v2/register
+	http://localhost:3000/api/v2/register
+2. ServerSide
+
+
+NextJs Component TYpes
+	1. Client Side Component
+	2. ServerSide Component
+
+
+app/items/route.js
+
+http://localhost:3000/items
+
+
+http://localhost:3000/api/v1/register
+
+app/api/v1/register/route.js
+
+
+http://localhost:3000/api/v1/register
+1. POST  export async function POST(request: Request) {}
+2. GET   export async function GET(request: Request) {}
+
+
+
+Client ------------------------ REquest --------------------> Server
+		http://localhost:3000/api/v1/register
+POSTMAN
+{
+	fname:"",
+	lname:"",
+	email:"",
+	pass:"123",
+	cpass:"456",
+}
+
+
+
+
+Client <------------------------ Response -------------------- Server
+		               ResponseCode 200 = OK
+				"Hello"
+{
+	property:"Hello"
+}
+
+
+Jo Liya Vo Hi Hum Return Karenge Response me
+
+				
+
+
+TS   -----------Convert --------> JS
+		Compiler
+		TSC
+		C Compoler
+
+
+TypeScript offers two ways to work with types:
+
+1. Explicit -> Manual -> Developer will write the types
+2. Implicit(Type Inference) -> Automatic
+
+
+OneDataType to AnotherDataType
+
+Typecasting/TypeConversion
+
+"123"    ------------>    123
+string   ------------>    number
+
+
+if(payload.email.includes("@") && payload.email.includes(".")){
+
+}	
+
+if(true){
+	
+}	
+
+
+Types Of Validation
+1. ClientSide
+2. ServerSide Validation
+
+
+
+
+Linux OS
+
+WSL -> Windows SubSystem Linux
+
+
+users
+	id
+	
+
+	createdAt  manual 
+	updatedAt  prisma Schemea
+
+
+
+npx = Node Package Execute
+npm = Node Package Manager
+nvm = Node Version Manager
+
+
+NextJS = React + NodeJs/ExpressJs = FullStack Framework
+
+NextJS = Frontend + Backend
+	  UI = User Interface
+       = ReactJs
+
+
+
+ReactJs Componets
+	1. RFC = React Functional Component (New)
+	2. RCC = React Class Component  (Old/Expire)
+
+NextJs Componets
+	1. Client Component  "use client"
+	2. Serverside Component
+
+
+<></>
+
+Empty Tag
+ <>
+ </>
+
+
+Self Close
+
+<div>Anil</div>
+<StartTag>ContentArea</EndTag>	
+
+
+<div></div>
+
+SelfClose 
+<div />
+
+
+
+Client ----------------------------> Server
+
+page.tsx
+Browser
+<form>
+
+
+NextJs 
+	1. Clientside Comp
+		page.tsx --> "use client"
+	2. ServerSide Comp 
+		page.tsx --> 	
+
+"use client"
+
+
+<form>
+</form>
+
+ReactJs/ AngularJs / VueJs
+
+How to call the api ?
+
+1. XMLHTTP Request  (JS built-in)
+2. Fetch API	    (JS built-in)	
+3. Axios	    (3rd Party Library)  
+	npm install libName		
+
+
+
+
+Whenver you are calling any api you should use
+
+TryCatch block
+
+Whenver you are performing any DB Operation you should use
+CRUD
+TryCatch block
+
+
+object.method(aa1,aa2)
+object.method("",{})
+object.method(string,object)
+axios.post();
+
+
+object.method(aa1,aa2,aa2)
+Response.json({"msg":"User Already Exist"})
+
+
+Blockchain Protocol
+1. Bitcoin Protocol
+	Application
+2. Ethereum Protocol
+	Web3 Project
+
+	2.1 Banking System
+
+
+    Local Ethereum Blockchain Network
+	N1-N2-N3-N4-....N20
+	
+	Technology
+	1. Hardhat3.x
+
+
+Web2  ---> API ------> HTTP  --> GET/POST/PUT
+			HyperTextTransferProtocal
+Web3 ------------>  Etherum Protocoal
+
+
+Local Ethereum Blockchain Network
+
+
+
+Hardhat3.x is NodeJs library to setup local eth network
+
+N1.......................N20
+
+N1			BankAccount
+  1. Address    	1. A/C No
+  2. Balance  1ETH    	2. Balance 200INR
+  3. PrivateKey		3. PIN
+
+
+
+cd ~ = cd
+
+ It will send you to your home directory
+pwd = 
+
+/home/himsu
+
+What is the file size of hardhat 3.x project ?
+359 MB
+
+Mobile Wifi
+
+http:\\wsl$
+
+
+How to start a local blockchain network using Hardhat
+
+npx hardhat node
+
+Anil
+Account #0:  0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266 (0 ETH)
+Private Key: 0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80
+
+Vijay
+Account #1:  0x70997970c51812dc3a010c7d01b50e0d17dc79c8 (20000 ETH)
+Private Key: 0x59c6995e998f97a5a0044966f0945389dc9e86dae88c7a8412f4603b6b78690d
+
+
+In order to build web3 project on Ethereum protocol
+We need to write smart contract using Solidity 
+
+
+Solidity is a programing language just like JavaScript/python/
+
+Web2
+	Language = JavaScript
+	Extension = .js
+	Code = Source Code
+
+
+	MyClass.js
+		class MyClass{ //PascalCase
+			1.
+			2
+			3
+		}	
+
+Web3
+	Language = Solidity
+	Extention = .sol
+	Code = Smart Contract
+	MyClass.sol
+		contract MyClass{ //PascalCase
+			
+		
+		}
+
+
+Class
+
+ Inhertiance
+
+A
+  x=10
+	B
+
+		C
+
+			D
+
+
+contract MyClass{ 
+	name="Nidhi"			
+}
+
+NextJs
+Frontend
+	Contract properties
+	Form
+	Contact Property
+		name = Nidhi
+	Run Contract with SweetAlert2
+
+
+				
+
+
+SmartContact -------------Solidity Compiler(solc)------------> Ethereum Virtual Machine (EVM) ByteCode + ABI
+
+JavaSourceCode ------------> Java Compiler  -----------> JVM Bytecode
+
+TypeScript ------------> TS Compile -----------> Js Code
+							1. Broswer
+							2. Shell/Terminal
+
+1. How to run/start a local blockchain network using hardhat ?
+	npx hardhat node
+2. How you write a simple contract
+	1. mkdir contracts
+	2. cd contracts
+	3. vim MyContract.sol
+	4. Write down basic contract code which is similar to JS Class
+
+3. How to watch the new block generated in BNetwork ?
+	
+4. How to compile solidity code ?
+	npx hardhat compile
+
+5. How to get into a local blockchain network
+	npx hardhat console --network localhost
+
+
+	.sol ---> solc-------> bytecode--------->EVM------>Contract deployed on the local BCnetwork
+						EthereumVirtualMachine
+
+		
+contracts/MyContract.sol
+		npx hardhat run scripts/deploy.ts --network=localhost
+		2-3
+
+
+Every contract filename should be PascaCase
+	e.g
+	MyContract.sol
+	Anil.sol
+
+Contract Name should always equal to the filename
+
+
+class = contract
+
+Js Class = Solidity contract
+
+		
+
+
+List down the solidity version
+
+
+
+List down the javascript version
+	
+
+
+
+
+0.8.33
+MajorNo.MinorNo.Patch
+
+
+
+
+contract <ContractName>{
+	Type  accessmodifier  PropertyName;
+	string	public	name
+
+
+
+Solidity SourceCode/SmartContract  ---> Solidity Compiler------> ByteCode(MachineReadableode)
+
+					0.8.28
+
+
+
+https://github.com/AleRapchan/escrow-service
+https://github.com/sounxk/Web3Escrow
+https://github.com/pcaversaccio/escrow-contract
+
+
+npx hardhat --init
+	using minimal
+		1."hardhat@^3.1.6"
+		2."@types/node@^22.8.5"
+		3."typescript@~5.8.0"
+
+	using Node Test Runner and Viem
+		1."hardhat@^3.1.6"
+		2."@types/node@^22.8.5"
+		3."typescript@~5.8.0"
+
+		4."@nomicfoundation/hardhat-toolbox-viem@^5.0.2"
+		5."@nomicfoundation/hardhat-ignition@^3.0.7"
+		6."forge-std@foundry-rs/forge-std#v1.9.4"
+		7."viem@^2.43.0"
+
+
+
+
+tree -I "node_modules"
+
+cmd  cli_arg1 cli_arg2 cli_arg3 ...
+
+cmd  --help
+tree --help	
+
+chains = channels = Path = Raste
+
+
+Viem Library Clients
+1. Public Client
+	Blockchain public information get
+	1. To get the latest block no	
+
+2. Wallet Client
+	are used for transaction or deploying contract
+3. Test Client
+
+
+Read is not a trasacion
+
+Write is a transaction
+
+So whenever you write something bcnet the new block will be generated
+
+Ethereum was officially launched on July 30, 2015.
+
+
+	Today is 6 Feb 2026
+	What was the day 
+	3843 days ago
+				July 31, 2015 — and it was a Friday.
+
+
+
+Account #0:  0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266 (10000 ETH)
+Private Key: 0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80
+
+Account #1:  0x70997970c51812dc3a010c7d01b50e0d17dc79c8 (10000 ETH)
+Private Key: 0x59c6995e998f97a5a0044966f0945389dc9e86dae88c7a8412f4603b6b78690d
+
+
+How to deploy a contract
+1. Manual 
+	1.1 Create a solidity file
+	1.2 Compile the solidity file
+	Manully deploying on BCNetwork
+2. Easier
+   2.1 scripts/
+
+
+3. Most Easiest Way of Deploying SmartContract in Hardhat3.x
+
+
+npx hardhat ignition deploy <module-path> --network <network-name>
+	
+
+What happen when you compile a solidity file ?
+	1. We get a ABI code
+		Application Binary Interface
+	2. We get the ByteCode
+
+
+*.sol ------> npx hardhat compile  ------> 1. ByteCode 2 ABI
+
+
+Web3.js → Ethers.js → Viem
+
+2015	   2016		New 
+
+
